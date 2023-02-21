@@ -12,7 +12,7 @@ const Reservations = ({reservations}) => {
         time={reservation.time}
         guests={reservation.number}
         id={reservation.id}
-        key={reservation.key}
+        key={reservation.id}
         data-cy={reservation.id}
       />
     )
