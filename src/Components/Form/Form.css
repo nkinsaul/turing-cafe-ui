@@ -1,0 +1,10 @@
+.res-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.form-component {
+  width: 10%;
+  height: 100%;
+}

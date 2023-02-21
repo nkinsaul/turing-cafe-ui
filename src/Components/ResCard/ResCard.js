@@ -9,7 +9,7 @@ const ResCard = ({name, date, time, guests }) => {
       <p>{date}</p>
       <p>{time}</p>
       <p>Number of guests: {guests}</p>
-      <button>CANCEL</button>
+      <button className="cancel">CANCEL</button>
     </div>
   )
 }
