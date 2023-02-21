@@ -13,7 +13,9 @@ const postReservation = (id, name, date, time, number) => {
     })
   })
   .then(response => response.json())
-  .then(data => console.log('success', data))
+  .catch((error) => {
+    console.log('Error', error)
+  })
 }
 
 export default postReservation
