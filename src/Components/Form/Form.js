@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Form.css'
+import postReservation from "../apiPost";
 
 class Form extends Component {
   constructor() {
@@ -23,14 +24,12 @@ class Form extends Component {
       ...this.state
     }
     this.props.addReservation(newReservation)
+    postReservation(newReservation.id, this.state.name, this.state.date, this.state.time, this.state.number)
     this.clearForm()
   }
 
   clearForm = () => {
-    this.state.name = ''
-    this.state.date = ''
-    this.state.time = ''
-    this.state.guests = ''
+    this.setState({name: '', date: '', time: '', guests: ''})
   }
 
   render() {

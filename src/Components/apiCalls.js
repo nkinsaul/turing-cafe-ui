@@ -4,4 +4,6 @@ const getReservations = () => {
   .then(response => response.json())
 }
 
+
+
 export default getReservations

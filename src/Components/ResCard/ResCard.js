@@ -4,7 +4,7 @@ import './ResCard.css'
 const ResCard = ({name, date, time, guests, id }) => {
 
   return (
-    <div className="card" data-cy={id}>
+    <div className="card" data-cy={id} id={id} key={id}>
       <h1>{name}</h1>
       <p>{date}</p>
       <p>{time}</p>
