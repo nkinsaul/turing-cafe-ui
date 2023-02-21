@@ -37,6 +37,7 @@ class Form extends Component {
     return (
       <form className="res-form">
         <input 
+          data-cy="name-input"
           className="form-component"
           type='text'
           placeholder="Name"
@@ -46,6 +47,7 @@ class Form extends Component {
         />  
 
         <input
+          data-cy="date-input"
           className="form-component"
           type='text'
           placeholder="Date(mm/dd)"
@@ -55,6 +57,7 @@ class Form extends Component {
         />
 
         <input
+          data-cy="time-input"
           className="form-component"
           type='text'
           placeholder="Time"
@@ -64,6 +67,7 @@ class Form extends Component {
         />
 
         <input
+          data-cy="guests-input"
           className="form-component"  
           type='text'
           placeholder="Number of Guests"
@@ -72,7 +76,7 @@ class Form extends Component {
           onChange={event => {this.handleChange(event)}}
         />
 
-        <button onClick={event => this.submitReservation(event)}className="form-component">Make Reservation</button>
+        <button onClick={event => this.submitReservation(event)}data-cy="submit-reservation" className="form-component">Make Reservation</button>
 
       </form>
     )

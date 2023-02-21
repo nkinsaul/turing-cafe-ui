@@ -25,6 +25,15 @@ describe('Dashboard view', () => {
     cy.get('[data-cy="1"]').contains('p', '12/29')
     cy.get('[data-cy="1"]').contains('p', '7:00')
     cy.get('[data-cy="guests-1"]').should('be.visible')
+  });
+
+  it('user can make a reservation', () => {
+    cy.get('[data-cy="name-input"]').type('Natalie')
+    cy.get('[data-cy="date-input"]').type('03/05')
+    cy.get('[data-cy="time-input"]').type('7:00')
+    cy.get('[data-cy="guests-input"]').type('2')
+    cy.get('[data-cy="submit-reservation"]').click()
+    cy.contains('h1', 'Natalie')
   })
 
 })
