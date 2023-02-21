@@ -24,7 +24,7 @@ class Form extends Component {
       ...this.state
     }
     this.props.addReservation(newReservation)
-    postReservation(newReservation.id, this.state.name, this.state.date, this.state.time, this.state.number)
+    postReservation(newReservation.id, this.state.name, this.state.date, this.state.time, this.state.guests)
     this.clearForm()
   }
 
@@ -68,7 +68,7 @@ class Form extends Component {
         <input
           data-cy="guests-input"
           className="form-component"  
-          type='text'
+          type='number'
           placeholder="Number of Guests"
           name='guests'
           value={this.state.guests}

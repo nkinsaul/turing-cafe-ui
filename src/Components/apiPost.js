@@ -9,7 +9,7 @@ const postReservation = (id, name, date, time, number) => {
       name: name,
       date: date,
       time: time, 
-      number: number 
+      number: parseInt(number) 
     })
   })
   .then(response => response.json())
