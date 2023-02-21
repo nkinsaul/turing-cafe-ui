@@ -1,0 +1,16 @@
+.card {
+  background-color: white;
+  border: 5px solid teal;
+  color: teal;
+  border-radius: 10px;
+  height: 70%;
+  width: 80%;
+}
+
+button {
+  width: 70%;
+  height: 10%;
+  background-color: teal;
+  color: white;
+  border-radius: 10px;
+}

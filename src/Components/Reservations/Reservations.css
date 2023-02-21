@@ -1,0 +1,8 @@
+.reservation-container {
+  display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    grid-gap: 10px;
+    width: 90vw;
+    height: 80vh;
+}
